@@ -1,0 +1,1 @@
+for /F "delims=" %%a in (java -XshowSettings:properties -version | findstr /C:"java.vendor = Oracle Corporation") do set "batToolDir=%%a"
